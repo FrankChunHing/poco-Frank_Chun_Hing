@@ -1,0 +1,119 @@
+/* Base styles for all devices */
+/* Add your base styles here */
+
+body {
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(21, 163, 163);
+    height: 20vh
+}
+
+article {
+
+    background-color: rgb(197, 188, 188);
+    width: 100%;
+}
+
+.sign_up{
+
+    background-color: rgb(150, 198, 198);
+
+}
+
+.feature_1 {
+
+    background-color: yellow;
+}
+
+.feature_2 {
+
+    background-color: pink
+}
+
+.feature_3 {
+    background-color: rgb(101, 99, 99);
+}
+
+main {
+    height: 80vh;
+}
+
+/* Mobile layout */
+@media only screen and (max-width: 600px) {
+    /* Styles for mobile devices (e.g., smartphones) */
+    /* Adjust layout for smaller screens */
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr; 
+        grid-gap: 0;}
+        
+    /* article, .sign_up, .feature_1, .feature_2, .feature_3 {
+        grid-column: 1/5;
+    } */
+
+    /* .sign_up, .feature_1, .feature_2, .feature_3 {
+        width: 100vw;
+    } */
+  }
+  
+  /* Tablet layout */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for tablet devices (e.g., iPads) */
+    /* Adjust layout for medium-sized screens */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr; 
+        grid-gap: 0;}
+
+    article {
+        grid-column: 1/5;
+    }
+
+    .sign_up, .feature_2 {
+        grid-column: 1/3;
+    }
+
+    .feature_1, .feature_3{
+        grid-column: 3/5;
+    }
+  }
+  
+  /* Desktop layout */
+  @media only screen and (min-width: 1025px) {
+    /* Styles for desktop devices */
+    /* Adjust layout for larger screens */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 3fr 1fr 2fr; 
+        grid-gap: 0;}
+
+    .feature_1 {
+        order: 1;
+        grid-column: 1/2;
+    }
+    .feature_3 {
+        order: 2;
+        grid-column: 2/3;
+    }
+    .feature_2 {
+        order: 3;
+        grid-column: 3/4;
+    }
+    .sign_up {
+        order: 4;
+        grid-column: 1/4;
+    }
+    article {
+        order: 5;
+        grid-column: 1/4;
+    }
+  }
+  

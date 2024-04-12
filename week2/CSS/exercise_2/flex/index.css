@@ -1,0 +1,116 @@
+/* Base styles for all devices */
+/* Add your base styles here */
+
+body {
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 20vh;
+    background-color: rgb(21, 163, 163);
+}
+
+article {
+    height: 30vh;
+    background-color: rgb(197, 188, 188);
+    width: 100%;
+}
+
+.sign_up{
+    height: 20vh;
+    background-color: rgb(150, 198, 198);
+
+}
+
+.feature_1 {
+    height: 20vh;
+    background-color: yellow;
+}
+
+.feature_2 {
+    height: 20vh;
+    background-color: pink
+}
+
+.feature_3 {
+    height: 20vh;
+    background-color: rgb(101, 99, 99);
+}
+
+
+
+/* Mobile layout */
+@media only screen and (max-width: 600px) {
+    /* Styles for mobile devices (e.g., smartphones) */
+    /* Adjust layout for smaller screens */
+    main {
+        display: flex;
+        flex-direction: column; }
+        
+    article, header {
+        width: 100vw;
+    }
+
+    .sign_up, .feature_1, .feature_2, .feature_3 {
+        width: 100vw;
+    }
+  }
+  
+  /* Tablet layout */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for tablet devices (e.g., iPads) */
+    /* Adjust layout for medium-sized screens */
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap }
+
+
+    article, header {
+        width: 97vw;
+    }
+
+    .sign_up, .feature_1, .feature_2, .feature_3 {
+        width: 48.5vw;
+    }
+
+
+  }
+  
+  /* Desktop layout */
+  @media only screen and (min-width: 1025px) {
+    /* Styles for desktop devices */
+    /* Adjust layout for larger screens */
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse }
+
+    article, header {
+        width: 100vw;
+    }
+
+    .sign_up {
+        width: 100vw;
+        height: 15vh;
+    }
+
+    .feature_1{
+        width: 33.33vw;
+        order: 1;
+    }
+
+    .feature_2 {
+        width: 33vw;
+        order: 3;
+    }
+
+    .feature_3 {
+        width: 33vw;
+        order: 2;
+    }
+  }
+  

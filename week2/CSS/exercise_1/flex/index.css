@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+    border: 2px solid green;
+ }
+
+
+section {
+    border: 2px solid red;
+    text-align: center;
+    flex: 1;
+}
+
+footer {
+    /* position: sticky; */
+    background-color: aquamarine;
+    height: 100px;
+    bottom: 0px;
+    border:0.5em solid blue;
+    border-radius: 50px;
+    text-align: center;
+ }

@@ -1,0 +1,20 @@
+main {
+    display: grid;
+    grid-template: 4fr 100px / auto;
+    height: 130vh;
+ }
+
+
+section {
+    border: 2px solid red;
+    text-align: center;
+}
+
+footer {
+    /* position: sticky; */
+    background-color: aquamarine;
+    height: 100px;
+    border:0.5em solid blue;
+    border-radius: 50px;
+    text-align: center;
+ }
