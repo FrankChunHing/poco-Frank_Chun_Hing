@@ -1,0 +1,67 @@
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 20vh;
+    align-items: center;
+    text-align: center;
+}
+
+
+.icons h2 {
+    grid-column: 1/5;
+}
+
+/* .icons img {
+    grid-column: ;
+} */
+
+header {
+    display: flex;
+}
+
+header a {
+    width: 6vw;
+}
+
+header ul {
+    width: 60vw;
+    border: 3px solid red;
+}
+
+header Logo {
+    width: 10vw;
+}
+
+
+.Shop_bottles {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 30vh;
+    align-items: center;
+    text-align: center;
+}
+
+.Shop_bottles img {
+    border: 1px solid blue;
+}
+
+
+.stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6fr;
+    height: 20vh;
+    align-items: center;
+    text-align: center;
+}
+
+.stories h3 {
+    margin-right: 20em;
+}
+
+.stories a {
+    margin-left: 20em;
+}
