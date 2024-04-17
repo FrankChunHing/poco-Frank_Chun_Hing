@@ -104,12 +104,12 @@ article {
     }
 
     .feature_2 {
-        width: 33vw;
+        width: 33.33vw;
         order: 3;
     }
 
     .feature_3 {
-        width: 33vw;
+        width: 33.33vw;
         order: 2;
     }
   }

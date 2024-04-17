@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* font-size: 62.5%; to make the default px to 10 from 16*/
+}
+
+
+/* for using other frameworks or works */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.old_nav {
+    list-style-type: none;
+    display: flex;
+    height: 7rem;
+    background-color: lightblue;
+    font-size: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin:2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.old_nav li:hover {
+    cursor: pointer;
+}
+
+/* .hamburger {
+    display: none;
+} */
+
+.hamburger.none {
+    display: none;
+}
+
+.cross {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 2.4rem;
+    height:3rem;
+    cursor: pointer;
+}
+
+.new_cross{
+    display: block;
+    position: absolute;
+    top: 2.6rem;
+    right: 2.6rem;
+    height:3rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.old_nav.new_nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background-color: lightblue;
+    font-size: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 40vw;
+    z-index: 0;
+    right: 0;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .old_nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        height:2rem;
+        cursor: pointer;
+    }
+ 
+}
+
+@media only screen and (min-width: 801px) {
+    .old_nav {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}

@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* font-size: 62.5%; to make the default px to 10 from 16*/
+}
+
+
+/* for using other frameworks or works */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 2rem;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+span, p {
+    color: black;
+}
+
+/* main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 140vh;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+} */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    width: 100vh;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40vh;
+    margin: 2rem;
+}
+
+main section img {
+    width: 30vw;
+    object-fit: contain;
+    padding: 2rem;
+    max-width: 30rem;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    font-size: 2rem;
+    padding: 2rem;
+    width: 20rem;
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 2rem;
+        width: 100vh;
+        align-items: center;
+        text-align: center;
+    }
+    main section img {
+        width: 60vw;
+        object-fit: contain;
+        padding: 2rem;
+    }
+}
