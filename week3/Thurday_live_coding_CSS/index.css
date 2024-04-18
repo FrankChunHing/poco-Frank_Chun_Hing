@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+main ul {
+    justify-content: flex-start;
+    gap: 0;
+    overflow-x: hidden;
+
+}
+
+main ul li {
+    background: blue;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    height: 50vh;
+    width: 100vw;
+    color: white;
+    font-size: 3rem;
+    /* transform: translateX(0);
+    transition: transform 1s ease-in-out; */
+}
+
+main ul li:target {
+    /* transform: translateX(100%); */
+}
+
+#slide2 {
+    background: red;
+}
+
+#slide3{
+    background: green;
+}
