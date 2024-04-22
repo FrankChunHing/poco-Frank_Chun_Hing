@@ -3,11 +3,11 @@ document.addEventListener('submit', function(event) {
     const number = document.getElementById('number').value;
 
     // Call a function to handle the input value
-    document.getElementById('result').innerHTML = handleInput(number);
+    document.getElementById('result').textContent = sortInput(number); // using innerHTML can cause XSS
 });
 
-function handleInput(number) {
-    return number.split("") //from number to array
+function sortInput(str) {
+    return str.split("") //from number to array
                  .sort() 
                  .join("")
 }

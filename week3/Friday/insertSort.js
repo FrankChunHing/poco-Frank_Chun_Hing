@@ -1,15 +1,39 @@
-let old_array = [19, 33, 8, 24, 7, 28, 3, 10, 30, 12, 5, 36, 23, 27, 40, 11, 22, 14, 37, 25, 13, 18, 9, 6, 32, 21, 16, 38, 35, 1, 31, 29, 20, 2, 26, 4, 17, 34, 15, 39]
-let new_array = []
+let old_array = [3,4,10,23,23423,4364576,8,45735,234210,1]
 
-for ( let i = 0; i < old_array.length; i++ ){
+let new_array = []
     if (new_array.length === 0){
-        new_array.push(old_array[i])  // adding the first element in new_array
+        new_array.push(old_array[0])  // adding the first element in new_array
     }
-    for (let j = 0 ; j < new_array.length; j++){
-        if (old_array[i] < new_array[j]){
-            new_array.splice(j,1,old_array[i])
+for (let i = 1; i < old_array.length; i++) {
+    let inserted = false;
+
+    for (let j = 0; j < new_array.length; j++) {
+        if (old_array[i] <= new_array[j]) {
+            new_array.splice(j, 0, old_array[i]); // insert the old element before the current new element
+            inserted = true;
+            break;
         }
-        else if ( (old_array[i] > new_array[j]) && 
-            j === new_array.length - 1 ){ new_array.push(old_array[i])}
+    }
+
+    if (!inserted) {
+        new_array.push(old_array[i]); // append the old element at the end if it's greater than all existing elements
     }
 }
+
+
+
+let new_new_array = old_array[0]
+
+old_array.shift()  // dont consider the fisrt element of the old_array
+         .map((old_element) => { //like a for loop 
+            let inserted = false;
+            new_new_array.map((new_element, index) => {
+                if (old_element <= new_element){
+                    new_new_array.splice(index,0,old_element)
+                    inserted =true
+                }
+            })
+            if (!inserted){
+                new_new_array.push(old_element)
+            }
+         });
