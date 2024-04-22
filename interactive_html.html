@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="" method="POST">
+            <fieldset>
+                <legend> Contact details</legend>
+                <label for="fname"> Name</label>
+                <input type="text" id="fname" required 
+                    placeholder="input your name here">
+                <label for="email"> Email</label>
+                <input type="email" id="email" required autocomplete="off">
+            </fieldset>
+            <fieldset>
+                <legend> Payment details</legend>
+                <label for="paypal">Paypal</label>
+                <!-- for in label, id in input for linking -->
+                <input type="radio" id="paypal" name="paymentMethod">
+                <label for="twint">twint</label>
+                <input type="radio" id="twint" name="paymentMethod"> 
+                <!-- name is used for grouping the inputs-->
+                <!-- or use checkbox -->
+                <!-- the value attribute specifies the value that is sent to the server 
+                    when the form is submitted if that particular option is selected. -->
+            </fieldset>
+            <input type="submit" value="Submit">
+            <button>Submit</button>
+            <textarea>123123</textarea>
+        </form>
+    </main>
+</body>
+</html>

@@ -36,6 +36,6 @@ document.getElementById("dateForm").addEventListener("submit", function(event) {
     const calDay = new Date(`2023-${selectedMonth}-${selectedDay}`);
 
     // Calculate the number of days between the selected day and the reference day
-    const result = Math.floor((calDay - referenceDay) / (1000 * 60 * 60 * 24));
+    const result = Math.floor((calDay - referenceDay) / (1000 * 60 * 60 * 24)) + 1;
 
-    document.getElementById('result').innerHTML = result; })
+    document.getElementById('result').textContent = result; })
