@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Quotes</title>
+</head>
+<body>
+    <h1 id="quotes"></h1>
+    <script>
+        function display(){
+            let author = prompt('input the name of the Author')
+            let quote = prompt('input the quote')
+            document.getElementById("quotes").innerText = `${author} says, "${quote}"`
+        }
+        display()
+    </script>
+</body>
+</html>

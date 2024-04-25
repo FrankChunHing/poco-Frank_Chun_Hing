@@ -10,5 +10,5 @@ const day = {
 
 
 for (let name in day){
-    console.log(name)
+    console.log(name, "*****", day[name])
 }
