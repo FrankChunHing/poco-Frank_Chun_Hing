@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week4 day5</title>
+</head>
+<body>
+    <p>akjsdhfkjhsdakfjhasdkjhfaskdfhasdfkjasdhf<strong id="red">983264982347</strong>kadfjhgakjdfhgksdfjg
+        <strong>dhfkjdshfkj3425982379823$#$@</strong>
+    </p>
+    <script>
+        document.querySelector("strong:not(#red)").textContent = "Hello      abdb"
+        let h3Tag = document.createElement("h3");
+        let pTag = document.querySelector("p")
+
+        h3Tag.textContent = " this is a h3 tag"
+        pTag.after(h3Tag) // only moving the element instead of creating one
+
+        pTag.insertAdjacentElement("beforebegin",h3Tag)
+    </script>
+</body>
+</html>
