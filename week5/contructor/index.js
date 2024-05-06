@@ -52,3 +52,14 @@ class TipsClass {
 let firstCustomer = new TipsClass(356, 10)
 
 console.log(firstCustomer.tipCalculate())
+
+
+const params = {
+    myparam1: 123,
+    // myparam2: ['abc', 'xyz']
+};
+
+// Construct the URL with query parameters
+const url = `/api/data?${new URLSearchParams(params).toString()}`;
+
+console.log(url)
