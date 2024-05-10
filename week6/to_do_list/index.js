@@ -49,28 +49,32 @@ function renderHTML(){
         if (!compareDate.includes(element.date)) {
             compareDate.push(element.date);
             return (`
-                <h3> date to do: ${element.date}</h3>
-                <p> person to do: ${element.person} </p>
-                <ul>
-                    ${element.list.map(list => {
-                        return `<li>${list}</li>`;
-                    }).join('')}
-                </ul>
-                <input type="text" id=${element.id} 
-                    placeholder="add to do list" >
-                <button id="${element.id}"> Finish task </button>
+                <section>
+                    <h3> date to do: ${element.date}</h3>
+                    <p> person to do: ${element.person} </p>
+                    <ul>
+                        ${element.list.map(list => {
+                            return `<li>${list}</li>`;
+                        }).join('')}
+                    </ul>
+                    <input type="text" id=${element.id} 
+                        placeholder="add to do list" >
+                    <button id="${element.id}"> Finish task </button>
+                </section>
             `);
         } else {
             return (`
-                <p> person to do: ${element.person} </p>
-                <ul>
-                    ${element.list.map(list => {
-                        return `<li>${list}</li>`;
-                    }).join('')}
-                </ul>
-                <input type="text" id=${element.id} 
-                placeholder="add to do list" >
-                <button id="${element.id}"> Finish task </button>
+                <div>
+                    <p> person to do: ${element.person} </p>
+                    <ul>
+                        ${element.list.map(list => {
+                            return `<li>${list}</li>`;
+                        }).join('')}
+                    </ul>
+                    <input type="text" id=${element.id} 
+                    placeholder="add to do list" >
+                    <button id="${element.id}"> Finish task </button>
+                </div>    
             `);
     }
 }).join('')
